@@ -8,11 +8,11 @@
 #       nix build -f --arg ghc "(import build.nix {ghc-path=$GHC_TREE;})"
 #
 let
-  rev = "f2632f5c60f574d787fc5490efb3f43f9e6209b7";
+  rev = "bfb61a770929668ee22848ce578f8d0ca4738536";
   baseNixpkgs =
     builtins.fetchTarball {
     url = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
-    sha256 = "1c36p7w36i38gng3yp1nd5vz0p2dwrax5szjkvnmdxfklggs7knf";
+    sha256 = "1jfzwgdbsw6vx38h9vf20zhj8826xhg27w6djxmpg9f7092wa4wh";
   };
 in
 
